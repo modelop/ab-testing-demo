@@ -1,1 +1,1 @@
-{"Envelope": null, "Transport": {"Topic": "input", "BootstrapServers": ["kafka:9092"], "Type": "kafka"}, "Encoding": "json"}
+{"Transport":{"Topic":"stock","BootstrapServers":["fastscore:9092"],"Type":"kafka", "MaxWaitTime": 8388607, "Group": "FastscoreEngine"},"Encoding":"json", "SkipToRecord": "earliest"}
