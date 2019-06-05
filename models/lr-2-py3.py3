@@ -17,7 +17,6 @@ def begin():
         lr = pickle.load(f)
 
 def action(x):
-    time.sleep(3)
     global window, window_size
     x = x['Close']
     window = window[1-window_size:] + [x]
