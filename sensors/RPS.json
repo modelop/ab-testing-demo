@@ -9,7 +9,7 @@
   },
   "Filter": {
     "Type": ">",
-    "Threshold": "1G",
+    "Threshold": "1G"
   },
   "Aggregate": null,
   "Sink": "Pneumo",
