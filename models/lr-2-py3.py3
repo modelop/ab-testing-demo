@@ -1,5 +1,5 @@
 # fastscore.schema.0: close_price
-# fastscore.schema.1: tagged-double
+# fastscore.schema.1: tagged_double
 
 
 import numpy as np
@@ -22,9 +22,9 @@ def action(x):
     x = x['Close']
     window = window[1-window_size:] + [x]
     if len(window) < window_size:
-        yield {"name": "price", "value":x}
+        yield {"name": "price_new", "value":x}
     else:
         X = np.array([window])
         y = lr.predict(X)
-        yield {"name":"priceb", "value": y[0,0]}
+        yield {"name":"price_new", "value": y[0,0]}
 
